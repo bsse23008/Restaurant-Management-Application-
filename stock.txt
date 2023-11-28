@@ -1,0 +1,9 @@
+bread 100
+potato 50
+tomato 10
+onion 20
+chicken 30
+egg 200
+beaf 100
+mayo 250
+ketchup 252

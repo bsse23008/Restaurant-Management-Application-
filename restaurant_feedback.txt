@@ -1,0 +1,36 @@
+Customer Name: 
+Food Rating: 4
+Staff Rating: -2
+Cleanliness Rating: -2058268752
+Customer will not return to the restaurant.
+Overall Experience Rating: 0
+Suggestions: 
+Complaints: 
+Chef Points: 0
+Customer Name: 
+Food Rating: -2
+Staff Rating: 0
+Cleanliness Rating: 0
+Customer will not return to the restaurant.
+Overall Experience Rating: 0
+Suggestions: 
+Complaints: 
+Chef Points: 32766
+Customer Name: 
+Food Rating: 2
+Staff Rating: 2
+Cleanliness Rating: 2
+Customer will not return to the restaurant.
+Overall Experience Rating: 2
+Suggestions: 2
+Complaints: 2
+Chef Points: 0
+Customer Name: fahad
+Food Rating: 3
+Staff Rating: 1
+Cleanliness Rating: 1
+Customer will not return to the restaurant.
+Overall Experience Rating: 3
+Suggestions: Fuck
+Complaints: off
+Chef Points: 0

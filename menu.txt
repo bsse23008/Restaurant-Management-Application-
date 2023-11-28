@@ -1,0 +1,6 @@
+pepsi 100 0
+burger 200 2
+pizza 500 1
+sandwich 150 4
+broste 200 0
+briyani 300 2

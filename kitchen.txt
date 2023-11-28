@@ -1,0 +1,48 @@
+Order for table no 5
+The selected food is 
+1.briyani		
+Order for table no 4
+The selected food is 
+1.sandwich		
+Order for table no 5
+The selected food is 
+1.sandwich		
+Order for table no 7
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 2
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 4
+The selected food is 
+1.briyani		
+Order for table no 2
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 5
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 3
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 5
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 5
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 5
+The selected food is 
+1.pepsi		
+2.burger		
+Order for table no 4
+The selected food is 
+1.pepsi		
+2.burger		

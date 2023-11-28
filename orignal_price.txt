@@ -1,0 +1,6 @@
+pepsi 70
+burger 170
+pizza 400
+sandwich 100
+broste 140
+briyani 230

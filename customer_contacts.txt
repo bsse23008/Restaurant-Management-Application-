@@ -1,0 +1,12 @@
+Customer Name: 
+Phone Number: 2321323
+Email: 2321s
+Customer Name: 
+Phone Number: -2
+Email: -2
+Customer Name: 
+Phone Number: 2
+Email: 2
+Customer Name: fahad
+Phone Number: 03215075220
+Email: ahmad@gmail.com

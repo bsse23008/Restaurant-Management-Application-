@@ -1,0 +1,102 @@
+Rider is AKBAR
+Rating is 3
+The selected food and total price is 
+1.burger		2%		588
+Rider is AKBAR
+Rating is 5
+The selected food and total price is 
+1.pepsi		0%		100
+2.pizza		1%		495
+Rating is 2
+The selected food and total price is 
+1.pepsi		0%		200
+2.burger		2%		392
+
+
+
+void chefPage() {
+    auto *menu = new Menu<string, int>[nameOfItems];
+    int k = 0, n;
+    string b;
+    cout << "\n\t\t**Welcome to chef Page**";
+    cout << "\n1. To add recipe \n2. To review order \n3. To View Stock \n4. To Edit Stock"  << endl;
+    cout << "Enter :";
+    cin >> n;
+    if (n == 1) {
+        recipe();
+    } else if (n == 2) {
+        int arr1[10];
+        int k1 = 0;
+        ifstream input1("order.txt", ios::in);
+        if (input1.is_open()) {
+            while (!input1.eof()) {
+                input1 >> arr1[k1];
+                k1++;
+            }
+        } else {
+            cout << "\n\tFile is not open";
+        }
+        input1.close();
+        cout << "\nvalue :" << k1;
+        int j = 0;
+        ifstream data("menu.txt", ios::in);
+        if (data.is_open()) {
+            while (!data.eof()) {
+                data >> menu[j].name
+                     >> menu[j].price
+                     >> menu[j].discount;
+                j++;
+            }
+        }
+        data.close();
+        ifstream input("ingredient.txt", ios::in);
+        if (input.is_open()) {
+            while (true) {
+                input >> arr[k].name;
+                for (int l = 0; l < 4; l++) {
+                    input >> arr[k].item[l];
+                }
+                k++;
+                if (input.eof()) {
+                    break;
+                }
+            }
+        }
+        input.close();
+        int i = 0;
+        while (true) {
+            cout << "\n" << i + 1 << "." << "Name :" << menu[arr1[i]].name;
+            if (i == (k1 - 2)) {
+                break;
+            }
+            i++;
+        }
+        for (int m = 0; m < k1; m++) {
+            int index = 0;
+            for (int l = 0; l < k - 1; l++) {
+                if (menu[arr1[m]].name == arr[l].name) {
+                    index += l;
+                    cout << "\nname :" << arr[index].name << "\tRecipe :";
+                    for (int o = 0; o < 4; o++)
+                        cout << arr[index].item[o] << "  ";
+                }
+            }
+        }
+    }
+    else if(n==3){
+        viewStock();
+    }
+    else if(n==4){
+        string itemName;
+        int quantity;
+        cout << "Enter item name to edit: ";
+        cin >> itemName;
+        cout << "Enter quantity to deduct: ";
+        cin >> quantity;
+        editStock(itemName, quantity);
+        cout << "Stock updated successfully!\n";
+    }
+    else
+        cout<<"Invalid Choice"<<endl;
+    delete[] menu;
+}
