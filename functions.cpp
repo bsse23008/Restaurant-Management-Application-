@@ -1203,7 +1203,7 @@ bool checkExistingRes(){
 
 bool dataStore(string date1, string time1, int table1){
 
-        string *name = new string [noOfExistingRes+1]; 
+        string *name = new string    [noOfExistingRes+1]; 
         string *date    = new string [noOfExistingRes+1];
         string *time    = new string [noOfExistingRes+1];
         int  * tableNo  = new int    [noOfExistingRes+1];
@@ -1341,21 +1341,21 @@ void tableReservation(){
                 }
             }
 
-    
+    int itr =0;
         while(true){
-
+retrytable:
             cout << " Enter your desired table : ";
             
             showTables();
             
             cin  >> n.tableNo;
-            bool inves = dataStore(n.date, n.time, n.tableNo);
-            if (inves)
+            bool isReserved = dataStore(n.date, n.time, n.tableNo);
+            if (isReserved)
             {
                 cout << " Sorry the table is already reserved ! "<< endl; 
-               continue; 
+                continue; 
             } 
-    
+          
             else if( n.tableNo > 0 &&  n.tableNo < 31 )
             {
                break;
@@ -1364,8 +1364,7 @@ void tableReservation(){
             else 
             {
                 cout << " Invalid Input !" << endl;
-            } 
-            
+            }    
         }
 
         bool check =  checkExistingRes();
@@ -1376,7 +1375,7 @@ void tableReservation(){
                  return;
         }
        
-        bool isAvailable = dataStore(n.date , n.time, n.tableNo);
+         bool isAvailable = dataStore(n.date , n.time, n.tableNo);
 
         if (!isAvailable)
         {
@@ -1404,11 +1403,11 @@ void tableReservation(){
                        cout <<"\t\t  Your Total Amount Due is : " << calculateBill << "\t(1500 each person)" << endl;
                        cout << "\t\t====================================" << endl;
             }
-        }
+       }
      else 
        {
              cout << "Sorry, the table is already reserved for the desired date and time.\n";
              cout << "Please try for another date or time slot." << endl;
-                      
+             goto retrytable;         
         } 
-}
+   }
