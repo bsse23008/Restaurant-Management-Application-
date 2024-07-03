@@ -47,11 +47,6 @@ void App() {
 
 int main() {
     App();
-//    adminPage();
-//    userPage();
-//    chefPage();
-//    recipie();
-
     return 0;
 }
 
